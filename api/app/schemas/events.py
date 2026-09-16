@@ -4,6 +4,7 @@ from enum import Enum
 from pydantic import BaseModel, Field
 
 class Severity(str, Enum):
+    INFORMATIONAL = "INFORMATIONAL"
     LOW = "LOW"
     MEDIUM = "MEDIUM"
     HIGH = "HIGH"
@@ -23,6 +24,6 @@ class EventCreate(BaseModel):
     source_system: SourceSystem
     source_event_type: str = Field(min_length=1, max_length=100)
     source_event_time: datetime
-    severity: Severity
+    severity: str = Field(min_length=1, max_length=50)
     location: str = Field(min_length=1, max_length=100)
     description: str = Field(min_length=1)   
