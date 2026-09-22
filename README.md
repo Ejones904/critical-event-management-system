@@ -79,7 +79,7 @@ The database defines events from `ELD_PLATFORM`, `TRANSPORTATION_MANAGEMENT_SYST
 
 **In the current implementation:** Python, FastAPI, PostgreSQL, Docker Compose, SQL, Git, GitHub Issues, and pull requests.
 
-**Planned for deployment:** Amazon SQS, Amazon SNS, Amazon EC2, AWS IAM, Amazon CloudWatch, Terraform, and Jenkins.
+**Planned for deployment:** Amazon SQS, Amazon SNS, Amazon EC2, AWS IAM, Amazon CloudWatch and Terraform.
 
 ## Architectural decisions
 
